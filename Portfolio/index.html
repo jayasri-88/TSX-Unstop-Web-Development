@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body onload="welcomeMessage()">
+
+  <header>
+    <div class="container">
+      <h1> My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>Hello! I'm an enthusiastic web developer currently doing an internship at Techsonix.</p>
+      <p>I love building beautiful websites using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <aside class="skills">
+      <h3>My Skills</h3>
+      <ul>
+        <li> HTML5</li>
+        <li> CSS3</li>
+        <li> JavaScript</li>
+      </ul>
+    </aside>
+  </main>
+
+  <section class="hello-section container">
+    <h2>Hello, World!</h2>
+    <p id="helloText">Welcome to my portfolio!</p>
+    <button onclick="changeText()">Click Me</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function welcomeMessage() {
+      console.log("Portfolio loaded successfully!");
+    }
+
+    function changeText() {
+      document.getElementById("helloText").innerText = "Thanks for clicking!";
+    }
+  </script>
+
+</body>
+</html>
